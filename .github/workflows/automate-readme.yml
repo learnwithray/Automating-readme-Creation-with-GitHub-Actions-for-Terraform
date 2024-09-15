@@ -32,7 +32,7 @@ jobs:
         run: echo Generate Terraform Docs
 
 
-      - name: pPassing the GITHUB_TOKEN as an input
+      - name: Passing the GITHUB_TOKEN as an input
         run: |
           gh issue --repo ${{ github.repository }} \
             create --title "Issue title" --body "Issue body"
