@@ -39,13 +39,6 @@ jobs:
       - name: Generate Terraform Docs
         run: echo Generate Terraform Docs
 
-      - name: Passing the GITHUB_TOKEN as an input
-        run: |
-          gh issue --repo ${{ github.repository }} \
-            create --title "Issue title" --body "Issue body"
-        env:
-          GH_TOKEN: ${{ secrets.README_TOKEN }}
-
       # Action to generate Terraform documentation
       - name: Install Terraform Docs
         uses: terraform-docs/gh-actions@v1.2.2
