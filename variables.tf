@@ -1,7 +1,7 @@
 #### Generic Variables
 variable "project_id" {
   description = "The GCP project ID."
-  default     = "burner-mansaini"
+  default     = ""
 }
 variable "region" {
   description = "The name of the Cloud Run service."
