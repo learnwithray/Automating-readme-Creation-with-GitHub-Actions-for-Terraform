@@ -32,7 +32,7 @@ No modules.
 | <a name="input_max_instance_count"></a> [max\_instance\_count](#input\_max\_instance\_count) | The maximum number of container instances. | `number` | n/a | yes |
 | <a name="input_memory"></a> [memory](#input\_memory) | The memory limit for the container. | `string` | n/a | yes |
 | <a name="input_min_instance_count"></a> [min\_instance\_count](#input\_min\_instance\_count) | The minimum number of container instances. | `number` | n/a | yes |
-| <a name="input_project_id"></a> [project\_id](#input\_project\_id) | The GCP project ID. | `string` | `"burner-mansaini"` | no |
+| <a name="input_project_id"></a> [project\_id](#input\_project\_id) | The GCP project ID. | `string` | `""` | no |
 | <a name="input_region"></a> [region](#input\_region) | The name of the Cloud Run service. | `string` | `"us-central1"` | no |
 | <a name="input_service_name"></a> [service\_name](#input\_service\_name) | The name of the Cloud Run service. | `string` | n/a | yes |
 
@@ -40,5 +40,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_service_name"></a> [service\_name](#output\_service\_name) | The URL of the Cloud Run service. |
 | <a name="output_service_url"></a> [service\_url](#output\_service\_url) | The URL of the Cloud Run service. |
 <!-- END_TF_DOCS -->
