@@ -10,6 +10,7 @@ resource "google_cloud_run_service" "cloud_run_service" {
         "autoscaling.knative.dev/maxScale" = tostring(var.max_instance_count)
       }
     }
+    
     spec {
       containers {
         name  = var.containers_name
