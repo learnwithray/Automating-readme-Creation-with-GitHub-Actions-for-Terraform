@@ -30,24 +30,4 @@ resource "google_cloud_run_service" "cloud_run_service" {
       }
     }
   }
-
-  # traffic {
-  #   revision_name   = var.revision_name
-  #   percent         = var.percent
-  #   tag             = var.tag
-  #   latest_revision = var.latest_revision
-  # }
-#   traffic {
-#     revision_name   = var.new_revision_name
-#     percent         = 0
-#     tag             = var.new_revision_tag
-#     latest_revision = var.new_revision_latest
-#   }
-
-#   traffic {
-#     revision_name   = var.existing_revision_name
-#     percent         = var.existing_percent
-#     tag             = var.existing_tag
-#     latest_revision = var.existing_latest_revision
-#   }
 }

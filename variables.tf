@@ -8,7 +8,7 @@ variable "region" {
   default     = "us-central1"
 }
 
-
+#### Cloud run service variables
 variable "service_name" {
   description = "The name of the Cloud Run service."
   type        = string
@@ -53,44 +53,3 @@ variable "max_instance_count" {
   description = "The maximum number of container instances."
   type        = number
 }
-
-# variable "new_revision_name" {
-#   description = "RevisionName of the new revision to which to send this portion of traffic."
-#   type        = string
-#   default     = ""
-# }
-
-# variable "new_revision_tag" {
-#   description = "Tag for the new revision."
-#   type        = string
-#   default     = ""
-# }
-
-# variable "new_revision_latest" {
-#   description = "LatestRevision for the new revision."
-#   type        = bool
-#   default     = true
-# }
-
-# variable "existing_revision_name" {
-#   description = "RevisionName of the existing revision to which to send this portion of traffic."
-#   type        = string
-#   default     = ""
-# }
-
-# variable "existing_percent" {
-#   description = "Percent of the traffic to the existing revision."
-#   type        = number
-# }
-
-# variable "existing_tag" {
-#   description = "Tag for the existing revision."
-#   type        = string
-#   default     = ""
-# }
-
-# variable "existing_latest_revision" {
-#   description = "LatestRevision for the existing revision."
-#   type        = bool
-#   default     = true
-# }
